@@ -1,5 +1,8 @@
-$main-background-image: url('../assets/images/background.webp');
+$main-background-image: url('../assets/images/background-desktop.webp');
 $main-background-overlay: linear-gradient(rgba(0, 0, 0, 5), rgba(0, 0, 0, 0.3));
 
 $main-background-image-mobile: url('../assets/images/background-mobile.webp');
 $breakpoint-tablet: 768px;
+
+$padding-horizontal-desktop: 5rem;
+$padding-horizontal-mobile: 1.5rem;

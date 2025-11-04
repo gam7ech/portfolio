@@ -67,6 +67,18 @@ body {
     }
 }
 
+.container {
+    width: 100%; // Всегда занимать 100% ширины родителя
+    padding-left: $padding-horizontal-desktop;
+    padding-right: $padding-horizontal-desktop;
+
+    // Адаптация
+    @media (max-width: $breakpoint-tablet) {
+        padding-left: $padding-horizontal-mobile;
+        padding-right: $padding-horizontal-mobile;
+    }
+}
+
 // "Магия" для "без скролла"
 #root {
     height: 100%; // "Приказ" React-приложению занять 100% высоты
