@@ -60,6 +60,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @media (max-width: $breakpoint-tablet) {
+        background-image: $main-background-overlay, $main-background-image-mobile;
+        background-attachment: scroll; 
+    }
 }
 
 // "Магия" для "без скролла"
