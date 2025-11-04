@@ -1,0 +1,70 @@
+// Глобальные стили
+
+@import './styles/variables';
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('./assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('./assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('./assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Ultra.woff2') format('woff2');
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit; // "Приказ": Наследуй размер шрифта
+    font-weight: inherit; // "Приказ": Наследуй жирность
+}
+
+a { text-decoration: none; color: inherit; }
+
+html, body { height: 100%; }
+
+body {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-weight: 400;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    user-select: none;
+    // Плавное сглаживание шрифтов (для "перфекциониста")
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-image: $main-background-overlay, $main-background-image;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+// "Магия" для "без скролла"
+#root {
+    height: 100%; // "Приказ" React-приложению занять 100% высоты
+    display: flex; // Включаем "флекс"
+    flex-direction: column; // "Приказ" кубикам (Header, Main, Footer) встать "колонкой"
+}

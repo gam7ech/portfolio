@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.footer {
+    padding: 1rem 5rem;
+    .container {
+        text-align: right;
+    }
+    .footer__copyright {
+        font-weight: 100;
+        font-size: clamp(0.875rem, 0.8333rem + 0.2083vw, 1rem);
+    }
+}
