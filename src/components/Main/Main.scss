@@ -40,6 +40,9 @@
             &:hover {
                 opacity: 1;
             }
+            @media (max-width: $breakpoint-tablet) {
+                opacity: 1;
+            }
         }
     }
 }
