@@ -17,12 +17,12 @@
             .main__subtitle {
                 font-weight: 300;
                 font-size: clamp(1.25rem, 1rem + 1.25vw, 2rem);
-                color: #cccccc;
+                color: $text-secondary;
             }
             .main__desc {
                 font-weight: 100;
                 font-size: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem);
-                color: #cccccc;
+                color: $text-tertiary;
                 margin-top: 3rem;
                 max-width: 65ch;
                 @media (max-width: $breakpoint-tablet) {
