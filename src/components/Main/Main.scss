@@ -10,6 +10,9 @@
         .main__content {
             margin-top: auto;
             margin-bottom: auto;
+            @media (max-width: $breakpoint-tablet) {
+                margin-bottom: 2.5rem;
+            }
             .main__title {
                 font-weight: 300;
                 font-size: clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem);
@@ -25,12 +28,18 @@
                 color: #cccccc;
                 margin-top: 3rem;
                 max-width: 65ch;
+                @media (max-width: $breakpoint-tablet) {
+                    margin-top: 2.5rem;
+                }
             }
         }
         .main__socials {
             display: flex;
             gap: 1.5rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1rem;
+            @media (max-width: $breakpoint-tablet) {
+                margin-bottom: 10rem;
+            }
         }
         .main__social-icon {
             width: clamp(3rem, 2.6667rem + 1.6667vw, 4rem);
