@@ -7,12 +7,9 @@
         flex-direction: column;
         align-items: flex-start;
         height: 100%;
+        justify-content: center;
         .main__content {
-            margin-top: auto;
-            margin-bottom: auto;
-            @media (max-width: $breakpoint-tablet) {
-                margin-bottom: 2.5rem;
-            }
+            margin-bottom: 7rem;
             .main__title {
                 font-weight: 300;
                 font-size: clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem);
@@ -37,10 +34,6 @@
             display: flex;
             gap: 1.5rem;
             margin-bottom: 1rem;
-            @media (max-width: $breakpoint-tablet) {
-                margin-top: auto;
-                margin-bottom: auto;
-            }
         }
         .main__social-icon {
             width: clamp(3rem, 2.6667rem + 1.6667vw, 4rem);
