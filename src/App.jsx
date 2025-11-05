@@ -11,7 +11,7 @@ function App() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 2500); // Таймер, по истечении которого прелоадер исчезнет
+        }, 5000);
     
         return () => clearTimeout(timer);
     }, []);
