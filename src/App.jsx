@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
-import Preloader from './components/Preloader/Preloader';
+import Preloader from './components/temp/Preloader';
 import './App.scss';
 
 function App() {
