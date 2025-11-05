@@ -18,7 +18,7 @@ function Main() {
                     </p>
                 </div>
                 <div className="main__socials">
-                    <a href="https://wa.me/79038579707?text=Доброго%20времени%20суток!%0AМеня%20интересует%20ваш%20сервис,%20хотел%20бы%20обсудить%20проект."
+                    <a href="https://wa.me/79038579707?text=Доброго%20времени%20суток,%20Гам!%0AМеня%20интересует%20ваш%20сервис,%20хотел%20бы%20обсудить%20проект."
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="main__social-link">
