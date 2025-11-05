@@ -1,54 +1,17 @@
-@import '../../styles/variables';
-
 .preloader {
-    // Делаем его полноэкранным оверлеем
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $bg-primary; // Используем твой фон
+    background-color: #000; // Черный фон для матрицы
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; // Гарантируем, что он поверх всего
+    z-index: 9999;
+    overflow: hidden; // На всякий случай
 }
 
-.preloader__text {
-    font-family: 'Courier New', Courier, monospace; // "Кодерский" шрифт
-    font-size: 1.5rem;
-    color: $text-primary;
-    
-    // --- Магия анимации ---
-    overflow: hidden; // Скрывает текст, который еще не "напечатан"
-    border-right: .15em solid $brand-accent; // Это будет мигающий курсор
-    white-space: nowrap; // Текст не переносится на новую строку
-    letter-spacing: .1em;
-    
-    // 'animation' - это сокращенная запись
-    animation: 
-        // 1. Анимация "печатания"
-        typing 2s steps(21, end), // 21 шаг (по кол-ву букв) за 2 сек
-        
-        // 2. Анимация "мигания курсора"
-        blink-caret .75s step-end infinite;
-}
-
-/* Анимация набора текста */
-@keyframes typing {
-    from { width: 0 } // От 0% ширины
-    to { width: 100% } // До 100% ширины
-}
-
-/* Анимация мигания курсора */
-@keyframes blink-caret {
-    from, to { border-color: transparent } // Курсор невидимый
-    50% { border-color: $brand-accent; } // Курсор видимый (твоим розовым цветом)
-}
-
-// Адаптация для мобильных
-@media (max-width: $breakpoint-tablet) {
-    .preloader__text {
-        font-size: 1rem; // Уменьшаем шрифт
-    }
+canvas {
+    display: block; // Убираем возможные отступы у canvas
 }
