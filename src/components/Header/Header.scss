@@ -14,15 +14,5 @@
                 color: $brand-accent;
             }
         }
-        .header__phone {
-            font-weight: 300;
-            font-size: clamp(1.5rem, 1.4167rem + 0.4167vw, 1.75rem);
-            &:hover {
-                color: $brand-accent;
-            }
-            @media (max-width: $breakpoint-tablet) {
-                display: none;
-            }
-        }
     }
 }
