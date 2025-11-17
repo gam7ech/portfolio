@@ -1,7 +1,6 @@
 import './Main.scss';
 import { whatsappIcon, telegramIcon, instagramIcon } from '../../assets/images/icons';
 
-
 function Main() {
     return (
         <main className="main">
