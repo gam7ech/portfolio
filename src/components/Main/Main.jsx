@@ -17,19 +17,19 @@ function Main() {
                     </p>
                 </div>
                 <div className="main__socials">
-                    <a href="https://wa.me/79038579707"
+                    <a href="https://wa.me/79932959707"
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="main__social-link">
                         <img src={whatsappIcon} alt="WhatsApp" className="main__social-icon" />
                     </a>
-                    <a href="https://t.me/gam7lx" 
+                    <a href="https://t.me/gam7ech" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="main__social-link">
                         <img src={telegramIcon} alt="Telegram" className="main__social-icon" />
                     </a>
-                    <a href="https://www.instagram.com/gam7lx" 
+                    <a href="https://www.instagram.com/gam7ech"
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="main__social-link">
